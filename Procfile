@@ -1,2 +1,2 @@
-web:gunicorn -b :$PORT app:app
+web:gunicorn -b :$PORT run:app
 release: python manage.py db upgrade
